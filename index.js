@@ -9,7 +9,7 @@ rgServer.use(express.json())
 
 rgServer.use(router)
 
-const PORT =4000
+const PORT =4000 ||  process.env.PORT
 
 rgServer.listen(PORT,()=>{
     console.log(`Register server started at port : ${PORT}`);
